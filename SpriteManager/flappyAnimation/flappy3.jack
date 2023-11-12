@@ -1,4 +1,4 @@
-function void draw(int location) {
+function void flappy3(int location) {
 	var int memAddress; 
 	let memAddress = 16384+location;
 	// column 0
@@ -12,18 +12,18 @@ function void draw(int location) {
 	do Memory.poke(memAddress +224, 48);
 	do Memory.poke(memAddress +256, 12);
 	do Memory.poke(memAddress +288, 12);
-	do Memory.poke(memAddress +320, 4092);
-	do Memory.poke(memAddress +352, 4092);
-	do Memory.poke(memAddress +384, 15375);
-	do Memory.poke(memAddress +416, 15375);
+	do Memory.poke(memAddress +320, 12);
+	do Memory.poke(memAddress +352, 12);
+	do Memory.poke(memAddress +384, 4092);
+	do Memory.poke(memAddress +416, 4092);
 	do Memory.poke(memAddress +448, 12291);
 	do Memory.poke(memAddress +480, 12291);
-	do Memory.poke(memAddress +512, 4092);
-	do Memory.poke(memAddress +544, 4092);
-	do Memory.poke(memAddress +576, 48);
-	do Memory.poke(memAddress +608, 48);
-	do Memory.poke(memAddress +640, 960);
-	do Memory.poke(memAddress +672, 960);
+	do Memory.poke(memAddress +512, 3075);
+	do Memory.poke(memAddress +544, 3075);
+	do Memory.poke(memAddress +576, 771);
+	do Memory.poke(memAddress +608, 771);
+	do Memory.poke(memAddress +640, 1020);
+	do Memory.poke(memAddress +672, 1020);
 	do Memory.poke(memAddress +704, -1024);
 	do Memory.poke(memAddress +736, -1024);
 	// column 1

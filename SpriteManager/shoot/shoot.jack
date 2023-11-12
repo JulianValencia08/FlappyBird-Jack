@@ -1,0 +1,13 @@
+function void draw(int location) {
+	var int memAddress; 
+	let memAddress = 16384+location;
+	// column 0
+	do Memory.poke(memAddress, 192);
+	do Memory.poke(memAddress +32, 1016);
+	do Memory.poke(memAddress +64, 2044);
+	do Memory.poke(memAddress +96, 4095);
+	do Memory.poke(memAddress +128, 2044);
+	do Memory.poke(memAddress +160, 1016);
+	do Memory.poke(memAddress +192, 192);
+	return;
+}
